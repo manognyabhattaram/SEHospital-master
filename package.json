@@ -1,0 +1,34 @@
+{
+  "name": "sehospital",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.5.3",
+    "monk": "^7.1.2",
+    "morgan": "~1.9.1"
+  },
+  "description": "Hospital Management Portal",
+  "main": "app.js",
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manubhattaram/SEHospital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manubhattaram/SEHospital/issues"
+  },
+  "homepage": "https://github.com/manubhattaram/SEHospital#readme"
+}

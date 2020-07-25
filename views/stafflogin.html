@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS library -->
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity=
+"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <!-- JS library -->
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity=
+"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript library -->
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity=
+"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script type = "text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+  </head>
+<body>
+
+
+<!-- Main -->
+<div class="d-md-flex h-md-100 align-items-center">
+	<div class="col-md-6 p-0 bg-indigo h-md-100">
+		<div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+			<div class="logoarea pt-5 pb-5">
+				<p>
+					<i class="fa fa-anchor fa-3x"></i>
+				</p>
+				<h1 class="mb-0 mt-3 display-4">Hestia Medical</h1>
+				<h5 class="mb-4 font-weight-light">Staff login page</h5>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+		<div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+			<form class="border rounded p-5" action="/slogin" method="post">
+				<h3 class="mb-4 text-center">Sign In</h3>
+				<div class="form-group">
+      			<label>Select Role</label>
+										<!--select class="form-control">
+											<option>Receptionist</option>
+											<option>Doctor</option>
+										</select-->
+										<input type="text" class="form-control" name="role" placeholder="Receptionist/Doctor" required="">
+									</div>
+				<script>
+					var email1;
+					function emailEntered(){
+						email1 = document.getElementsByName("email")[0].value;
+					    window.localStorage.setItem("vTwoLocalStorage", email1);
+					}
+				</script>
+				<div class="form-group">
+					<input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="E-mail" required="">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" name="passwd" placeholder="Password" required="">
+				</div>
+				<div class="form-group form-check">
+					<!--input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label small text-muted" for="exampleCheck1">Remember me</label-->
+				</div>
+				<button type="submit" onclick="emailEntered()" class="btn btn-success btn-round btn-block shadow-sm">Sign in</button>
+				<small class="d-block mt-4 text-center"><a class="text-gray" href="/">Back to website</a></small>
+			<br>
+			<a type="text" href = "patientlogin.html">Click here for Patient Login</a>
+			</form>
+
+		</div>
+	</div>
+</div>
+<!-- End Main -->
+
+
+</body>
+</html>>
